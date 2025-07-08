@@ -1,5 +1,5 @@
 :root{
-    --violet-doux: #6c63ff;
+    --violet-doux: #6b63ff;
     --violet-fonce: #534edd;
     --orange-vif: #FFA726;
     --gris-tres-fonce: #333;
@@ -139,14 +139,15 @@ ul li a.active::after {
     margin: 6rem auto;
 }
 
-.apropos-section h2 {
+section h2 {
    font-size: 2.5rem;
    font-weight: 700;
    color: var(--violet-doux);
    position: relative;
+   text-align: center;
 }
 
-.apropos-section h2::after {
+section h2::after {
     content: '';
     display: block;
     width: 60px;
@@ -161,4 +162,72 @@ ul li a.active::after {
     font-size: 1.1rem;
     color: var(--gris-fonce);
     margin-bottom: 2rem;
+}
+
+.competences-section {
+    margin-top: 3rem;
+}
+
+.competences-section table {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #FFF;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    margin-bottom: 3rem;
+    border-radius: 10px;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+.competences-section table th, 
+.competences-section table td {
+    padding: 15px;
+}
+
+.competences-section thead tr {
+    background-color: var(--violet-doux);
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.competences-section table td {
+    border-bottom: 1px solid var(--gris-clair);
+}
+
+.competences-section tbody tr:nth-child(even) {
+    background-color: #FDFDFD;
+}
+
+.competences-section tbody tr {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.competences-section tbody tr:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-3px);
+}
+
+footer {
+    background-color: var(--violet-fonce);
+    color: #FFF;
+    margin: 3rem;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 1rem;
+}
+
+footer a {
+    font-size: 1.6em;
+    color: #FFF;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    display: inline-block;
+    color: var(--orange-vif);
+    transform: translateY(-3px);
 }
