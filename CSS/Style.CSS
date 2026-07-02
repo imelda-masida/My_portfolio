@@ -125,7 +125,7 @@ ul li a.active::after {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
-    transition: backgroud-color 0.3s ease, transform 0.2s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
     margin-top: 1rem;
 }
 
@@ -229,11 +229,15 @@ footer a {
 
 footer a:hover {
     display: inline-block;
-    color: var(--orange-vif);
+    color: var(--gris-fonce);
     transform: translateY(-3px);
 }
 
 @media (max-width: 768px) {
+    
+    .logo {
+        font-size: 2rem;
+    }
     .hero-section {
         flex-direction: column;
         text-align: center;
