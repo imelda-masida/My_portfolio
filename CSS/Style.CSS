@@ -232,3 +232,23 @@ footer a:hover {
     color: var(--orange-vif);
     transform: translateY(-3px);
 }
+
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-section img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .apropos-section {
+        width: 90%;
+    }
+
+    .competences-section table {
+        width: 100%;
+    }
+}
