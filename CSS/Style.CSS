@@ -246,6 +246,8 @@ footer a:hover {
     .hero-section img {
         width: 200px;
         height: 200px;
+        align-items: center;
+        margin: 0 auto;
     }
 
     .apropos-section {
