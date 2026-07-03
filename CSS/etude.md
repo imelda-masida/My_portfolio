@@ -1,23 +1,23 @@
-:root {
+:root{
     --violet-doux: #6b63ff;
     --violet-fonce: #534edd;
     --orange-vif: #FFA726;
     --gris-tres-fonce: #333;
     --gris-fonce: #666;
-    --gris-tres-clair: #f8f8f8; 
-    --gris-clair: #EEE;
+   --gris-tres-clair: #f8f8f8; 
+   --gris-clair: #EEE;
 }
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
-body {
+body{
     background-color: var(--gris-tres-clair);
     font-family: Roboto, sans-serif;
-    overflow-x: hidden; /* Évite les coups de défilement horizontal parasites */
 }
 
 header {
@@ -26,7 +26,7 @@ header {
    align-items: center;
    background-color: white;
    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-   padding: 1.5rem 2rem; 
+   padding: 2rem 3rem;
    position: sticky;
    top: 0;
    left: 0;
@@ -35,7 +35,7 @@ header {
 
 .logo {
     text-decoration: none;
-    font-size: 2rem; /* Légèrement réduit de base */
+    font-size: 2.5rem;
     color: var(--violet-doux);
     font-weight: bold;
 }
@@ -45,11 +45,11 @@ ul {
     display: flex;
 }
 
-ul li {
+ul li{
     margin-left: 25px;
 }
 
-ul li a {
+ul li a{
     text-decoration: none;
     color: var(--gris-tres-fonce);
     font-weight: 600;
@@ -59,7 +59,7 @@ ul li a {
 }
 
 ul li a:hover {
-    color: var(--violet-fonce);
+color: var(--violet-fonce);
 }
 
 ul li a::after {
@@ -90,13 +90,8 @@ ul li a.active::after {
     justify-content: center;
     align-items: center;
     gap: 5rem;
-    text-align: left; 
-    margin: 6rem 2rem; 
-}
-
-
-.hero-content {
-    max-width: 600px;
+    text-align: center;
+    margin: 10rem 2rem;
 }
 
 .hero-section img {
@@ -108,16 +103,16 @@ ul li a.active::after {
 }
 
 .hero-section h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
     margin-bottom: 1.2rem;
     font-weight: bold;
     color: var(--violet-fonce);
 }
 
 .hero-section p {
-    font-size: 1.3rem;
-    color: var(--gris-fonce);
-    margin-bottom: 1.2rem;
+ font-size: 1.3rem;
+ color: var(--gris-fonce);
+ margin-bottom: 1.2rem;
 }
 
 .hero-section a {
@@ -141,10 +136,8 @@ ul li a.active::after {
 
 .apropos-section {
     text-align: center;
-    max-width: 800px;
-    width: 100%;
+    width: 800px;
     margin: 6rem auto;
-    padding: 0 1.5rem; /* Protection sur les côtés */
 }
 
 section h2 {
@@ -174,22 +167,14 @@ section h2::after {
 
 .competences-section {
     margin-top: 3rem;
-    padding: 0 1.5rem;
-}
-
-
-.table-container {
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto 3rem auto;
-    overflow-x: auto; /* Permet le scroll horizontal/le tableau est trop grand */
-    -webkit-overflow-scrolling: touch;
 }
 
 .competences-section table {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     background-color: #FFF;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    margin-bottom: 3rem;
     border-radius: 10px;
     border-collapse: collapse;
     overflow: hidden;
@@ -198,7 +183,6 @@ section h2::after {
 .competences-section table th, 
 .competences-section table td {
     padding: 15px;
-    white-space: nowrap; /* Évite que le texte se coupe bizarrement en hauteur */
 }
 
 .competences-section thead tr {
@@ -228,10 +212,9 @@ section h2::after {
 footer {
     background-color: var(--violet-fonce);
     color: #FFF;
-    margin: 3rem 2rem;
-    padding: 2rem 1rem;
+    margin: 3rem;
+    padding: 2rem 0;
     text-align: center;
-    border-radius: 10px;
 }
 
 footer p {
@@ -246,71 +229,43 @@ footer a {
 
 footer a:hover {
     display: inline-block;
-    color: var(--gris-clair);
+    color: var(--gris-fonce);
     transform: translateY(-3px);
 }
 
-
 @media (max-width: 768px) {
     
-    header {
-        flex-direction: column; 
-        gap: 1rem;
-        padding: 1.5rem 1rem;
-    }
-
     .logo {
-        font-size: 1.8rem;
-    }
-
-
-    ul {
-        width: 100%;
-        justify-content: center;
-        flex-wrap: wrap; 
-        gap: 10px;
-    }
-
-    ul li {
-        margin-left: 0; 
-        margin: 0 10px; 
-    }
-
-    ul li a {
-        font-size: 1rem;
-    }
-
-    .hero-section {
-        flex-direction: column; 
-        text-align: center;
-        margin: 3rem 1rem;
-        gap: 2rem;
-    }
-
-    
-    .hero-section img {
-        width: 220px;
-        height: 220px;
-        order: -1; 
-    }
-
-    .hero-section h1 {
-        font-size: 2.2rem; 
-    }
-
-    .hero-section p {
-        font-size: 1.1rem;
-    }
-
-    section h2 {
         font-size: 2rem;
+    }
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo-container {
+       font-size: 1rem;
+
+    }
+    .hero-section img {
+        width: 200px;
+        height: 200px;
+        align-items: center;
+        margin: 0 auto;
     }
 
     .apropos-section {
-        margin: 4rem auto;
+        width: 90%;
     }
 
+    .competences-section table {
+        width: 100%;
+    }
     footer {
-        margin: 2rem 1rem; 
+        margin: 0rem;
+        padding: 2rem 0;
+    }
+    nav ul {
+        flex-direction: repeat(1, 1fr);
+        align-items: center;
     }
 }
