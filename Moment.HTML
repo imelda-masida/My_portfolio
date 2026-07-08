@@ -10,7 +10,7 @@
 <body>
      <header>
         <div class="logo-container">
-            <a href="Moment.HTML"class="logo">Mes passions</a>
+            <a href="Moment.HTML"class="logo">Mes moments </a>
         </div>
         <nav>
             <ul>
@@ -20,7 +20,50 @@
             </ul>
         </nav>
     </header>
+    <section class="moi">
+     <div class="moi-content" style="color: white;">
+        <p>Voici des informations sur mes passions.</p>
+     </div>
+   </section>
+      <section class="mes-cartes swiper meSwiper">
+        <div class="conteneur-moi swiper-wrapper">
 
+        <div class="swiper-slide team-cart1">
+            <div class="barre-image"> <img src="" alt="img"> </div>
+             <div class="barre-texte">
+              <h3>Evenement :</h3>
+             <p></p>
+             <p></p>
+            </div>
+            </div>
+            
+            <div class="swiper-slide moi-cart2"></div>
+            <div class="barre-image"> <img src="" alt="img"> </div>
+             <div class="barre-texte">
+              <h3>Evenement :</h3>
+             <p></p>
+             <p></p>
+            </div>
+             
+            <div class="swiper-slide moi-cart3"></div>
+            <div class="barre-image"> <img src="" alt="img"> </div>
+             <div class="barre-texte">
+              <h3>Evenement :</h3>
+             <p></p>
+             <p></p>
+            </div>
+
+            <div class="barre-image"> <img src="" alt="img"> </div>
+             <div class="barre-texte">
+              <h3>Evenement :</h3>
+             <p></p>
+             <p></p>
+            </div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </section>
 
 
 
@@ -39,3 +82,31 @@
     </footer>
 </body>
 </html>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+    var swiper = new Swiper(".meSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+            },
+        },
+    });
+</script>
