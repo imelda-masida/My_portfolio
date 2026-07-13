@@ -225,8 +225,8 @@ section h2::after {
     transform: translateY(-3px);
 }
 
-.moi-carte1, .moi-carte2, .moi-carte3, .moi-carte4{
-    border: 2px;
+.swiper-slide{
+    border: 2px solid var(--gris-clair);
     border-radius: 10px;
     padding: 0px;
     font-size: 14px;
@@ -236,16 +236,15 @@ section h2::after {
 
     width: 100%;
     max-width: 300px;
-    min-height: 350px;
-    height: auto;    
+    height: auto;
     flex-shrink: 0;
+    box-sizing: border-box;
 }
 
 .barre-image {
     height: auto;
     width: 100%;
-    border-bottom: 2px solid var(--gris-clair);
-    border-radius: 10px;
+    overflow: hidden;
 }
 
 .barre-image img {
@@ -253,7 +252,7 @@ section h2::after {
     height: auto;
     display: block;
     object-fit: cover;
-    border-radius: 10px;
+    object-position: top;
 }
 
 .barre-texte {
@@ -263,7 +262,6 @@ section h2::after {
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
-    border-radius: 5px;
 }
 .barre-texte h3{
   color: #433030;
