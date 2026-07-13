@@ -22,53 +22,132 @@
         </nav>
     </header>
 
-    <section class="moi">
-     <div class="moi-content" style="color: #6b63ff;">
-        <p>Voici quelques moments que j'ai vécus.</p>
-     </div>
-   </section>
+      <section class="mes-cartes swiper meSwiper" style="
+      background-color: var(--gris-clair);
+      overflow: hidden;
+      margin-top: 5px;
+      margin-bottom: 30px;
+      ">
 
-      <section class="mes-cartes swiper meSwiper">
-        <div class="conteneur-moi swiper-wrapper">
+        <div class="conteneur-moi swiper-wrapper" style="display: flex; justify-content: center; gap: 30px;">
 
         <div class="swiper-slide moi-cart1">
-            <div class="barre-image"> <img src="image/mining.jpeg" alt="img"> </div>
+            <div class="barre-image"> 
+                <img src="image/mining.jpeg" alt="img">
+             </div>
+
              <div class="barre-texte">
               <h3>Evenement :</h3>
-             <p></p>
-             <p></p>
+             <p>texte</p>
+             <p>texte</p>
             </div>
-            
+        </div>
             
             <div class="swiper-slide moi-cart2">
-            <div class="barre-image"> <img src="image/misswme.jpeg" alt="img"> </div>
-             <div class="barre-texte">
-              <h3>Evenement :</h3>
-             <p></p>
-             <p></p>
+            <div class="barre-image"> 
+                <img src="image/misswme.jpeg" alt="img"> 
             </div>
 
+             <div class="barre-texte">
+              <h3>Evenement :</h3>
+             <p>texte</p>
+             <p>texte</p>
+            </div>
+        </div>
              
-            <div class="swiper-slide moi-cart3"></div>
-            <div class="barre-image"> <img src="image/tad.jpeg" alt="img"> </div>
+           
+        <div class="swiper-slide moi-cart3">
+            <div class="barre-image"> 
+                <img src="image/tab.jpeg" alt="img">
+             </div>
+
              <div class="barre-texte">
               <h3>Evenement :</h3>
-             <p></p>
-             <p></p>
+             <p>texte</p>
+             <p>texte</p>
             </div>
+        </div>
 
-            <div class="swiper-slide moi-cart4">
-            <div class="barre-image"> <img src="image/IMG_4522.jpeg" alt="img"> </div>
+        <div class="swiper-slide moi-cart4">
+            <div class="barre-image"> 
+                <img src="image/IMG_4522.jpeg" alt="img"> 
+            </div>
              <div class="barre-texte">
               <h3>Evenement :</h3>
-             <p></p>
-             <p></p>
+             <p>texte</p>
+             <p>texte</p>
             </div>
+        </div>
 
+         <div class="swiper-slide moi-cart5">
+            <div class="barre-image"> 
+                <img src="image/wbillym.jpg" alt="img"> 
+            </div>
+             <div class="barre-texte">
+              <h3>Evenement :</h3>
+             <p>texte</p>
+             <p>texte</p>
+            </div>
+        </div>
+
+         <div class="swiper-slide moi-cart6">
+            <div class="barre-image"> 
+                <img src="image/wjaccky.jpg" alt="img"> 
+            </div>
+             <div class="barre-texte">
+              <h3>Evenement :</h3>
+             <p>texte</p>
+             <p>texte</p>
+            </div>
+        </div>
+
+         <div class="swiper-slide moi-cart7">
+            <div class="barre-image"> 
+                <img src="image/Wtiwari.JPG" alt="img"> 
+            </div>
+             <div class="barre-texte">
+              <h3>Evenement :</h3>
+             <p>texte</p>
+             <p>texte</p>
+            </div>
+        </div>
+
+         <div class="swiper-slide moi-cart8">
+            <div class="barre-image"> 
+                <img src="image/journaliste.jpg" alt="img"> 
+            </div>
+             <div class="barre-texte">
+              <h3>Evenement :</h3>
+             <p>texte</p>
+             <p>texte</p>
+            </div>
+        </div>
         </div>
 
         <div class="swiper-pagination"></div>
       </section>
+
+    <section class="swiper phrase-marquante " style="background-color: var(--gris-clair);
+    padding: 30px;
+    text-align: center;
+    font-size: 25px;">
+        <div class="swiper-wrapper">
+             <div class="swiper-slide card-phmarque">
+        <p>texte</p>
+         <span>- nom auteur</span>
+      </div>
+    
+      <div class="swiper-slide card-phmarque">
+        <p>texte</p>
+      <span>- nom auteur</span>
+    </div>
+
+  </div>
+  <div class="swiper-pagination"></div>
+</div>     
+    
+   </section>
+
 
 
 
@@ -91,27 +170,28 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <script>
-    var swiper = new Swiper(".meSwiper", {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        loop: true,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        breakpoints: {
-            640: {
-                slidesPerView: 1,
-                spaceBetween: 20,
-            },
-            768: {
-                slidesPerView: 2,
-                spaceBetween: 40,
-            },
-            1024: {
-                slidesPerView: 3,
-                spaceBetween: 50,
-            },
-        },
-    });
+     const swiperphrases = new Swiper(".phrase-marquante", {
+    loop: true, 
+    autoplay: {
+      delay: 4000, 
+      disableOnInteraction: false, 
+    },
+    pagination: {
+      el: ".phrase-marquante .swiper-pagination", 
+      clickable: true,
+    },
+  });
+
+
+
+    const swiper = new Swiper(".meSwiper", {
+    slidesPerView: "auto", 
+    spaceBetween: 25, 
+    loop: true,
+    pagination: {
+      el: ".meSwiper .swiper-pagination", 
+      clickable: true,
+    },
+  });
+
 </script>
