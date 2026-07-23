@@ -297,6 +297,102 @@ footer a:hover {
 }
 
 
+/* Container principal */
+.textmom-intro {
+  background-color: var(--gris-clair);
+  color: var(--violet-fonce);
+  padding: 3rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Carte centrale pour structurer le texte */
+.intro-card {
+  position: relative;
+  max-width: 700px; /* Évite les lignes de texte trop longues */
+  background: rgba(255, 255, 255, 0.6); /* Effet d'opacité élégant */
+  border-radius: 12px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05); /* Ombre très douce */
+  border-left: 4px solid var(--violet-fonce); /* Ligne d'accent verticale */
+}
+
+/* Typographie & Lisibilité */
+.intro-card p {
+  font-family: 'Montserrat', sans-serif; /* Remplace "l;" par une vraie police */
+  font-size: 1.15rem;
+  line-height: 1.8; /* Aère grandement la lecture */
+  margin: 0;
+  text-align: center;
+}
+
+/* Guillemet décoratif en arrière-plan */
+.quote-mark {
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  font-size: 4rem;
+  opacity: 0.15;
+  font-family: Georgia, serif;
+}
+
+/* Container de la section */
+.phrase-marquante {
+  background-color: var(--gris-clair);
+  padding: 50px 20px 60px 20px; /* Plus d'espace en bas pour la pagination */
+  text-align: center;
+}
+
+/* Style de la carte de chaque citation */
+.card-phmarque {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 30px 25px;
+  max-width: 650px; /* Largeur idéale pour la lecture */
+  margin: 0 auto;  /* Centre la carte */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* Guillemet décoratif */
+.quote-icon {
+  font-size: 3rem;
+  color: var(--violet-fonce);
+  opacity: 0.2;
+  line-height: 1;
+  font-family: Georgia, serif;
+  margin-bottom: -10px;
+}
+
+/* Texte de la citation */
+.quote-text {
+  color: var(--violet-fonce);
+  font-size: 1.25rem; /* ~20px, plus lisible que 25px fixe */
+  line-height: 1.6;
+  font-weight: 500;
+  font-style: italic;
+  margin: 10px 0 15px 0;
+}
+
+/* Nom de l'auteur */
+.quote-author {
+  color: var(--violet-fonce);
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.8;
+}
+
+/* Personnalisation des puces Swiper */
+.phrase-marquante .swiper-pagination-bullet-active {
+  background-color: var(--violet-fonce);
+}
+
 @media (max-width: 768px) {
     
     header {
